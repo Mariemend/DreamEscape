@@ -1,0 +1,473 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #EAE2D2;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    overflow: hidden;
+    margin-left: auto;
+}
+.navbar nav{
+    gap: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    padding: 5px 8px;
+    font-size: 1rem;
+}
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background-image: url('background3.jpg'); 
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.hero h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+.hero p{
+    font-size: 1.2rem;
+    margin: 0 auto;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+.hero .content {
+    position: relative;
+    z-index: 2;
+}
+.slider {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    gap: 10px;
+    padding: 20px;
+    background: #f5f5f5;
+}
+
+.slide {
+    min-width: 300px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+    scroll-snap-align: start;
+}
+
+.slide h2 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.slide .btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: white;
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.slide .btn:hover {
+    background-color: black;
+    color: white;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: blanchedalmond;
+}
+.destinations{
+    margin-top: -10px;
+}
+
+p{
+    animation: fadeIn 2s ease-in-out;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.destination {
+    padding: 50px 10%;
+    background-color: #f9f9f9; 
+    color: #333;
+}
+
+.destination h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+
+.destination .content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap; 
+}
+
+.destination .image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.destination .image img {
+    width: 100%; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.destination .text {
+    flex: 2;
+    text-align: justify;
+}
+
+.destination .text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #34495e;
+}
+
+.destination .text p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.maldives-bg {
+    background: url('maldives background0.jpg') no-repeat center center/cover;
+  }
+  .Venise-bg {
+    background: url('venise1\'\'.jpg') no-repeat center center/cover;
+  }
+
+  .Burj-bg {
+    background: url('Burj\ Khalifa\ 1\'.jpg') no-repeat center center/cover;
+  }
+  
+.Petra-bg{
+    background: url('Petra1\'.jpg') no-repeat center center/cover;
+}
+
+.Santorin-bg{
+  background: url('Santorin1\'.jpg') no-repeat center center/cover;
+ }
+
+.Bali-bg{
+    background: url('Bali1\'.jpg') no-repeat center center/cover;
+}
+  .destination-header {
+    text-align: center;
+    color: white;
+    padding: 5rem 1rem;
+  }
+ 
+  .destination-image {
+    display: block;
+    max-width: 100%;
+    margin: 1rem auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .destination-image:hover {
+    transform: scale(1.05);
+  }
+  
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  footer a {
+    color: #e6e6fa;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  .destination-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  .destination-info .text {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .destination-info .image {
+    flex: 1;
+  }
+  
+  .destination-info .image img {
+    width: 80%;
+    max-width: 400px;
+    height: 420px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .image-gallery {
+    margin: 20px;
+  }
+  
+  .image-gallery h3 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .image-gallery .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+  }
+  
+  .image-gallery .gallery img {
+    width: 220px;
+    height: 310px;
+    object-fit: cover; 
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .image-gallery .gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  img{
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+  }
+  img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .lightbox-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 1000;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.3s ease;
+  }
+  
+  .lightbox-modal:target {
+    display: flex;
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  .lightbox-modal img {
+    max-width: 100%;
+    max-height: 90%;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .description {
+    color: white;
+    margin-top: 20px;
+    font-size: 1.2em;
+  }
+  h2 {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #005f73;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+.description {
+  font-family: 'Lobster', cursive; 
+  font-size: 1.1em; 
+  color: #f8bbd0; 
+  margin-top: 10px;
+  text-align: center; 
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); 
+  line-height: 1.5; 
+  animation: typing 3s steps(20, end), blink 0.5s step-end infinite alternate;;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%; }
+}
+h1 {
+  font-size: 4rem; 
+  font-family: 'Merriweather', serif; 
+  text-align: center;
+  color: white; 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+  animation: zoomIn 3s ease-in-out infinite alternate;
+}
+
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
+h3{
+  font-size: 2.5rem; 
+  font-family: 'Roboto', sans-serif; 
+  color:aqua; 
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); 
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+#Contact {
+  background-image:url(dream\ escape.jpg);
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 15px;
+  margin: 50px auto;
+  width: 80%;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#Contact h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: purple;
+}
+
+#Contact p {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color:white;
+  font-style:normal;
+}
+
+#Contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+#Contact ul li {
+  margin: 10px 0;
+}
+
+#Contact ul li a {
+  color: black;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+#Contact ul li a:hover {
+  color: pink;
+  text-decoration: underline;
+}
+
+#Contact {
+  animation: fadeIn 1.5s ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.site-name{
+  color: aqua;
+}
+.Email{
+  color: white;
+  font-size: 2rem;
+  text-decoration: underline;
+}
